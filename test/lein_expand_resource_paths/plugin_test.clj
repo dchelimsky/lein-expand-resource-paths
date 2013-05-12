@@ -4,6 +4,6 @@
 
 (deftest expand-paths
   (is (= {:resource-paths []} (middleware {:resource-paths ["i-do-not-exist/*"]})))
-  (is (= {:resource-paths ["./resources/a/1.txt" "./resources/a/2.txt"]} (middleware {:resource-paths ["resources/a/*"]})))
-  (is (= {:resource-paths ["./resources/b/3.txt" "./resources/b/4.txt"]} (middleware {:resource-paths ["resources/b/*"]})))
-  (is (= {:resource-paths ["./resources/a/1.txt" "./resources/a/2.txt" "./resources/b/3.txt" "./resources/b/4.txt"]} (middleware {:resource-paths ["resources/**/*"]}))))
+  (is (= {:resource-paths ["./test/resources/a/1.txt" "./test/resources/a/2.txt"]} (middleware {:resource-paths ["test/resources/a/*"]})))
+  (is (= {:resource-paths ["./test/resources/b/3.txt" "./test/resources/b/4.txt"]} (middleware {:resource-paths ["test/resources/b/*"]})))
+  (is (= {:resource-paths ["./test/resources/a/1.txt" "./test/resources/a/2.txt" "./test/resources/b/3.txt" "./test/resources/b/4.txt"]} (middleware {:resource-paths ["test/resources/**/*"]}))))
