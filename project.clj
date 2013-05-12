@@ -1,4 +1,4 @@
-(defproject lein-expand-resource-paths "0.0.1"
+(defproject lein-expand-resource-paths "0.0.1-SNAPSHOT"
   :description "expand glob patterns in resource-paths"
   :url "https://github.com/dchelimsky/lein-expand-resource-paths"
   :license {:name "Eclipse Public License"
