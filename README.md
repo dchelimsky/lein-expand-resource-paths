@@ -30,15 +30,9 @@ warned.
 
 ## Usage
 
-This will be released soon, but until it is you can use it locally as follows:
+Add `lien-expand-resource-paths` to `:plugins` in `project.clj`, e.g.
 
-    git clone https://github.com/dchelimsky/lein-expand-resource-paths.git
-    cd lein-expand-resource-paths
-    lein install
-
-Now add `lien-expand-resource-paths` to `:plugins` in `project.clj`, e.g.
-
-    :plugins [[lein-expand-resource-paths "0.0.1-SNAPSHOT"]]
+    :plugins [[lein-expand-resource-paths "0.0.1"]]
 
 Add the directory that your other dependency manager drops its jars
 into to `:resource-paths`, e.g.
