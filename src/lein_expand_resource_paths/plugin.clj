@@ -4,5 +4,8 @@
 (defn- expand-paths [paths]
   (->> paths (mapcat glob/glob) (map str)))
 
-(defn middleware [project & args]
+(defn middleware
+  "Autoloaded by Leiningen. Returns a new project map based on project,
+with any glob patterns in the :resource-paths vector expanded."
+  [project & args]
   (update-in project [:resource-paths] expand-paths))
