@@ -30,7 +30,7 @@ warned.
 
 ## Usage
 
-Add `lien-expand-resource-paths` to `:plugins` in `project.clj`, e.g.
+Add `lein-expand-resource-paths` to `:plugins` in `project.clj`, e.g.
 
     :plugins [[lein-expand-resource-paths "0.0.1"]]
 
